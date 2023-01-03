@@ -2,8 +2,6 @@ import React from "react";
 import './App.css';
 function App() {
 
-<iframe src="//stream.crichd.vip/update/star.php" width="100%" height="500px" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" allowfullscreen  
-allow="encrypted-media"></iframe>
 
 
   const [weather, setWeather] = React.useState('');
@@ -27,6 +25,9 @@ allow="encrypted-media"></iframe>
   return (
     <div>
       {
+<iframe src="//stream.crichd.vip/update/star.php" width="100%" height="500px" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" allowfullscreen  
+allow="encrypted-media"></iframe>
+
         weather.main !== undefined ? <div className="App-header">
           <div className="container text-center">
             <div className="row">
@@ -76,6 +77,7 @@ allow="encrypted-media"></iframe>
       }
     </div>
   );
+
 }
 
 export default App;
