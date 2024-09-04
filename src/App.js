@@ -8,8 +8,8 @@ function App() {
   React.useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
-        // console.log(position.coords.latitude, position.coords.longitude);
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=7b8d6c56df292d95f816f38d57ddd444&units=metric`)
+        console.log(position.coords.latitude, position.coords.longitude);
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=ae084f9b1115f43ed823d306f6a4d80b&units=metric`)
           .then(res => res.json())
           .then(data => {
             console.log(data);
