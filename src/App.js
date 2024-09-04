@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 function App() {
-
+let key = "api_key"
 
 
   const [weather, setWeather] = React.useState('');
@@ -9,7 +9,7 @@ function App() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
         console.log(position.coords.latitude, position.coords.longitude);
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=ae084f9b1115f43ed823d306f6a4d80b&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${key}=metric`)
           .then(res => res.json())
           .then(data => {
             console.log(data);
