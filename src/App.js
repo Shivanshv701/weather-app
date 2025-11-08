@@ -18,7 +18,7 @@ let key = "api_key"
       });
     } else {
       document.getElementById("demo").innerHTML =
-        "Geolocation is not supported by this browser.";
+        "Geolocation is not supported by this browser";
     }
   }, [])
 
